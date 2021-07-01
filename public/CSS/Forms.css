@@ -1,0 +1,105 @@
+/****************************Main****************************/
+.main{
+    background-color: #ebebeb;
+    display: block;
+    margin:0;
+    padding: 10px;
+}
+.Formulario{
+    background-color: #ebebeb;
+    display: block;
+    margin:0;
+    padding: 20px;
+}
+.Formulario h4{
+    margin-top: 0px;
+}
+.control-Form{
+    margin-bottom: 15px;
+}
+.control-Form label{
+    display: block;
+    font-style: italic;
+}
+.control-Form input{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+}
+/*Estilos especializados para una lista de checkbox*/
+.check-label{
+    display: inline-block !important;
+}
+.check-Options{
+    display: block;
+    width: 100%;
+}
+input[type="checkbox"]{
+    width: auto;
+}
+/******************************************************/
+/*Sobreescritura de valores para la dirección*/
+.Direccion{
+    margin-bottom: 15px;
+}
+input[name="CTY"],input[name="CP"]{
+    width: 47%;
+    display: inline-block;
+}
+input[name="estado"],input[name="pais"]{
+    width: 47%;
+    margin-left: 4%;
+    display: inline-block;
+}
+/******************************************************/
+/*Sobreescritura de valores para los radiobuttons*/
+input[type="radio"]{
+    width: auto;
+}
+.radio-label{
+    display: inline-block !important;
+}
+/******************************************************/
+/*Botones*/
+button{
+    color:white;
+    background-color: #1259c3;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 450ms;
+}
+.BtSubmit:hover{
+    background-color: #0022AA;
+}
+/******************************************************/
+/*Validación*/
+input:invalid{
+    border: solid red 1px;
+}
+/****************************Media Querys****************************/
+@media (min-width: 768px){
+    .main{
+        margin: 20px;
+    }
+    .Formulario{
+        width: 65%;
+        margin: auto;
+        border-style: ridge;
+    }
+    input[name="CTY"],input[name="CP"]{
+        width: 48%;
+        display: inline-block;
+    }
+    input[name="estado"],input[name="pais"]{
+        width: 48%;
+        margin-left: 3%;
+        display: inline-block;
+    }
+}
+
+@media(min-width: 1200px){
+    .Formulario{
+        width: 45%;
+    }
+}

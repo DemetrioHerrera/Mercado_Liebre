@@ -1,0 +1,332 @@
+/*Otra forma de agregar la familia de texto Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');*/
+/*Estilos Generales*/
+*{
+    box-sizing: border-box;
+    font-family:Roboto;
+}
+html{
+    margin:0px;
+    border:none;
+    padding:0px;
+    background-color: #EAC926;
+}
+/*Estilos en orden en que se implementan en el html*/
+body{
+    margin:0px;
+}
+/*Header*/
+.main-header{
+    background-color: #EAC926;   
+    padding: 20px;
+
+}
+.header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.logo,.search-bar{
+    width: 50%;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+}
+.formSearch{
+    width: 100%;
+    padding: 5px;
+}
+input[type="search"]{
+    padding: 0px;
+    display: inline-block;
+    font-size: 14px;
+    width: 90%;
+    height: 100%;
+    background-color: #ebebeb;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 5px 0px 5px 0px;
+}
+.searchIcon{    
+    background-color: #ebebeb;
+    width: 10%;
+    height: 100%;
+    display: inline-block;
+    border: none;
+    margin: 0px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+    padding: 5px 0px 5px 0px;
+}
+.searchIcon i{
+    color:#666;
+}
+.cuotas{
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+}
+.burger-menu{
+    text-align: center;
+    max-width: 30px;
+    background-color: #1259c3;
+    color: white;
+    border-radius: 6px;
+    border-color: black;
+    font-size: 20px;
+    padding: 4px 5px;
+    display: block;
+    margin: auto;
+}
+.main-navbar{
+    display: none;
+}
+.main-navbar ul{
+    list-style: none;  
+    padding:0;
+    margin: 0;
+}
+.main-navbar a{
+    font-weight: normal;
+    font-size: 12px;
+    color:#222222;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 0px;
+}
+/****************************Banner****************************/
+.Banner{
+    background-color: #ebebeb;
+    margin-bottom: 0px;
+    margin-top: 10px ;
+    padding: 0px;
+}
+.bannerImg{
+    width: 100%;
+    max-height: 130px;
+    margin: 0px;
+    padding: 0px;
+    display:block;
+}
+/****************************Main****************************/
+.main{
+    background-color: #ebebeb;
+    display: block;
+    margin:0;
+    padding-bottom: 10px;
+}
+.Visita, .Ofertas{
+    display: block;
+}
+.titulares{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+#Cafetera,#Macbook, #Samsung_Galaxy,#SmartTv{
+    background-color: white;
+    width: 90%;
+    margin: 10px 5% 0 5%;
+    position: relative;
+}
+.articulo{  
+    border-top: solid 1px #ebebeb;
+    background-color: white;
+    padding: 15px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.imgArticulo{
+    width: 100%;
+    margin:0px;
+    padding:0px;
+}
+.iconoEnvio,.precio,.descuento,.descripcion{
+    text-align: left;
+    font-size: 16px;
+}
+.precio,.descuento{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+#sendIcon{
+    display: block ;
+    font-size: 16px ;
+    color:#39b54a;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 1px solid #39b54a ;
+    background-color: none ;
+    border-radius: 50% ;
+    position: relative;
+    right: 20px ;
+    top: 15px ;
+    float: right;
+    z-index: 0;
+    transition: all 450ms;
+}
+#Cafetera:hover #sendIcon,#Macbook:hover #sendIcon, #Samsung_Galaxy:hover #sendIcon,#SmartTv:hover #sendIcon{
+    transform: rotateZ(-90deg);
+}
+.precio{
+    font-size: 18px;
+    width: 30%;
+}
+.descuento{
+    color:#39b54a;
+    width: 70%;
+}
+.descripcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ebebeb;
+    width: 98%;
+    height: 98%;
+    opacity: 0;
+    position: absolute;
+    top:1%;
+    left: 1%;
+    transition: all 450ms;    
+}
+.descripcion:hover{
+    opacity: 1;
+    background-color: rgba(6,6,6,0.6);
+    
+}
+/****************************Footer****************************/
+.footer{
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer section{
+    margin: 10px;
+}
+.tituloFooter{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+#IconFooter{
+    color:#03264C;
+    font-size: 2em;
+    margin: 10px;
+    transition: color 450ms;
+}
+#IconFooter:hover{
+    color: #0022AA;
+}
+.textoFooter{
+    width: 200px;
+    margin: auto;
+}
+/****************************Media Querys****************************/
+@media (min-width: 768px){
+    .header-top-bar{
+        justify-content: space-between;
+    }
+    .logo,.search-bar{
+        width: 200px;
+        display: block;
+    }
+    .search-bar{
+        width: auto;
+    }
+    .formSearch{
+        width: auto;
+        padding: 0px;
+    }
+    input[type="search"]{
+        width: auto;
+        height: auto;
+        padding: 5px;
+        margin-top: 8px;
+        margin-left: 10px;
+        font-size: 17px;
+        border: 1px solid #666;
+    }
+    .searchIcon{    
+        width: auto;
+        height: auto;
+        
+        border: 1px solid #666;
+        padding: 5px 5px;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;
+        
+    }
+    .cuotas{
+        max-width: 200px;
+        text-align: right;
+        font-size: 13px;
+        margin: 0px;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .main-navbar li{
+        margin: 0px 5px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .Visita,.Ofertas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    #Cafetera,#Macbook, #Samsung_Galaxy,#SmartTv{
+        display: block;
+        width: 42.5%;
+        margin: 10px 0px 0px 0px;
+        transition: all 450ms;
+    }
+    #Cafetera:hover,#Macbook:hover, #Samsung_Galaxy:hover,#SmartTv:hover{
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
+}
+
+@media(min-width: 1200px){
+    .header-top-bar,.main-navbar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .bannerImg{
+        max-height: 200px;
+    }
+    .cuotas{
+        max-width: none;
+        font-size: 15px;
+    }
+    .main-navbar li{
+        margin: 0px 10px;
+    }
+    .main-navbar a{
+        font-size: 19px;
+    }
+    #Cafetera,#Macbook, #Samsung_Galaxy,#SmartTv{
+        width: 23%;
+        margin: 10px 0px 0px 0px;
+    }
+    .footer{
+        margin: 45px;
+    }
+}
